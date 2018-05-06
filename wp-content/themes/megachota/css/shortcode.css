@@ -1533,7 +1533,9 @@ button.close:active {
 
 .magee-testimonial-box .testimonial-author .name {
 	margin: 0;
-	color: inherit;
+	font-size: 15px;
+	color: #000;
+	text-transform: none !important;
 }
 
 .magee-testimonial-box .testimonial-vcard.style2 .testimonial-avatar {
@@ -3111,13 +3113,14 @@ h3.counter-title {
 /*
  * 18.0 Image Box
  */
-
+/*add css*/
 .img-box {
 	overflow: hidden;
 	position: relative;
     display: inline-block;
     margin-bottom: -8px;
     max-width: 100%;
+	width: 100%;
 }
 
 .img-box .img-overlay {
@@ -3132,9 +3135,13 @@ h3.counter-title {
 .img-box .img-overlay.primary {
 	background-color: rgba(253,210,0,.7);
 }
-
+/*add css*/
 .img-box .img-overlay.dark {
-	background-color: rgba(0,0,0,.35);
+	background-color: rgba(255, 0, 0, .4);
+	width: 96%;
+	height: 91%;
+	margin-left: 2%;
+	margin-top: 2%;
 }
 
 .img-box .img-overlay.light {
@@ -3174,6 +3181,8 @@ h3.counter-title {
 
 .img-box.figcaption-middle .img-overlay-content {
 	vertical-align: middle;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .img-box.figcaption-top .img-overlay-content {
@@ -3235,6 +3244,7 @@ h3.counter-title {
 .img-box img {
 	transition: all 0.1s ease;
 	-webkit-transition: all .5s ease;
+	width: 100%;
 }
 
 .img-box:hover img {

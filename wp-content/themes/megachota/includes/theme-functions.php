@@ -1386,6 +1386,10 @@ function onetone_standard_fonts(){
 				'label' => 'Open Sans',
 				'stack' => 'Open Sans, sans-serif',
 			),
+			'Helvetica-Light' => array(
+				'label' => 'Helvetica Light',
+				'stack' => 'Helvetica Light, sans-serif',
+			),
 			'arial' => array(
 				'label' => 'Arial',
 				'stack' => 'Arial, sans-serif',

@@ -29,8 +29,8 @@
          <?php endif;?>
          <div class="home-section-content">
          <div class="row">
-         <div class="col-md-8"><div class="<?php echo $onetone_animated;?> <?php echo 'section_left_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInLeft" data-imageanimation="no"><?php echo do_shortcode($left_content);?></div></div>
-         <div class="col-md-4"><div class="<?php echo $onetone_animated;?> <?php echo 'section_right_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no"><?php echo do_shortcode($right_content);?></div></div>
+         <div class="col-md-6 event-social-description"><div class="<?php echo $onetone_animated;?> <?php echo 'section_left_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInLeft" data-imageanimation="no"><?php echo do_shortcode($left_content);?></div></div>
+         <div class="col-md-6 event-social"><div class="<?php echo $onetone_animated;?> <?php echo 'section_right_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no"><?php echo do_shortcode($right_content);?></div></div>
          </div>
           </div>
            <?php

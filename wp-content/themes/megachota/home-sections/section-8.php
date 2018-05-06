@@ -34,12 +34,18 @@ global $onetone_animated, $onetone_section_id, $allowedposttags;
                    <?php echo do_shortcode('[ms_contact receiver="'.$email.'" button_text="'.$btn_text.'" style="normal" color=""  terms="no" class=""][/ms_contact]');?>
           <?php }else{?>
           <form class="contact-form" action="" method="post">
-                      <input id="name" tabindex="1" name="name" size="22" type="text" value="" placeholder="<?php _e('Name', 'onetone')?>" />
-                      <input id="email" tabindex="2" name="email" size="22" type="text" value="" placeholder="<?php _e('Email', 'onetone')?>" />
-                      <textarea id="message" tabindex="4" cols="39" name="x-message" rows="7" placeholder="<?php _e('Message', 'onetone')?>"></textarea>
-                      <input id="sendto" name="sendto" type="hidden" value="<?php echo $email;?>" />
-                      <input id="submit" name="submit" type="button" value="<?php echo $btn_text;?>" />
-                      </form>
+				<input id="name" tabindex="1" name="name" size="22" type="text" value="" placeholder="NOMBRES" />
+				<input id="name" tabindex="1" name="phone" size="22" type="text" value="" placeholder="TELÉFONO" />
+				<input id="name" tabindex="1" name="phone" size="22" type="text" value="" placeholder="TIPO DE EVENTO" />
+				<input id="email" tabindex="2" name="email" size="22" type="text" value="" placeholder="CORREO" />
+				<!--<textarea id="message" tabindex="4" cols="39" name="x-message" rows="7" placeholder="<?php //_e('Message', 'onetone')?>"></textarea>-->
+				<input id="sendto" name="sendto" type="hidden" value="<?php echo $email;?>" />
+				<div class="send">
+					<span>
+						<input id="submit" name="submit" type="button" class="enviar" value="<?php echo $btn_text;?>" />
+					</span>
+				</div>
+			</form>
           <?php }?>
             </div>
            </div>

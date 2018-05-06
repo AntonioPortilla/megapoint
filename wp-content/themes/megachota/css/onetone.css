@@ -184,7 +184,6 @@ section .banner-box div.section-subtitle{
 
 /* 4.0 Contact */
 .contact-text {
-    font-family:'Raleway',sans-serif;
     width:80%;
     font-size:18px;
     text-transform:uppercase;
@@ -204,21 +203,42 @@ section .banner-box div.section-subtitle{
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    font-size:18px;
-    width:100%;
-    background-color:transparent;
-    border:1px solid #666;
-    padding:5px;
-    overflow:hidden;
-    margin-bottom:30px;
+	font-size: 15px;
+	width: 300px;
+	height: 50px;
+	background-color: #fff;
+	border: 1px solid #4D4D4D;
+	overflow:hidden;
+	margin-bottom: 12px;
+	text-align: center;
 }
-.contact-form [type="submit"] {
-    width:100px;
+.enviar {
+	max-width: 105px;
+	background-color: #0071BC !important;
+	color: #fff !important;
+	border: 0 !important;
+	display: block;
+	margin: 0 auto;
 }
-.contact-form [type="submit"]:hover {
-    width:100px;
-    background-color:#666;
-    color:#fff;
+.contact-form .send {}
+.contact-form .send span{display: inline-block;position: relative;}
+.contact-form .send span:before {
+	content:'';
+	background: url(../images/btn-left.png) no-repeat;
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	width: 42px;
+	height: 58px;
+}
+.contact-form .send span:after {
+	content:'';
+	background: url(../images/btn-right.png) no-repeat;
+	position: absolute;
+	right: -36px;
+	top: -4px;
+	width: 42px;
+	height: 58px;
 }
 .contact-form input::-webkit-input-placeholder,.contact-form textarea::-webkit-input-placeholder {
     color:#666;
