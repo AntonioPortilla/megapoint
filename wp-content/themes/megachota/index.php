@@ -26,7 +26,7 @@ $aside          = 'both-aside';
     <div class="container">
       <hgroup class="page-title">
         <h1>
-        <?php 
+        <?php
 		 $blog_title = get_the_title( get_option('page_for_posts', true) );
 		 echo $blog_title;
 		?>
@@ -43,12 +43,12 @@ $aside          = 'both-aside';
             <div class="container">
                 <div class="post-inner row <?php echo $aside; ?>">
                     <div class="col-main">
-                        <section class="post-main" role="main" id="content">                        
+                        <section class="post-main" role="main" id="content">
                             <article class="page type-page" role="article">
                             <?php if (have_posts()) :?>
                                 <!--blog list begin-->
                                 <div class="blog-list-wrap">
-                                
+
                                 <?php while ( have_posts() ) : the_post();?>
                                 <?php get_template_part("content",get_post_format()); ?>
                                 <?php endwhile;?>
@@ -68,7 +68,7 @@ $aside          = 'both-aside';
                     <div class="col-aside-left">
                         <aside class="blog-side left text-left">
                             <div class="widget-area">
-                                <?php get_sidebar('archiveleft');?> 
+                                <?php get_sidebar('archiveleft');?>
                             </div>
                         </aside>
                     </div>
@@ -78,13 +78,13 @@ $aside          = 'both-aside';
                        <?php get_sidebar('archiveright');?>
                     </div>
                     <?php endif; ?>
-                    
+
                 </div>
-            </div>  
+            </div>
         </div>
 <?php get_footer();?>
-<?php 
-  else: 
+<?php
+  else:
 ?>
 <?php get_template_part('template','home');?>
 <?php endif;?>

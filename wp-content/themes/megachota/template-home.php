@@ -11,7 +11,10 @@ get_header('home');
     <div class="page-inner row no-aside" style="padding-top: 0; padding-bottom: 0;">
       <div class="col-main">
         <section class="post-main" role="main" id="content">
-<article class="page type-page homepage" role="article">
+			<article class="page type-page homepage" role="article">
+			<?php
+				echo do_shortcode('[smartslider3 slider=2]');
+			?>
 			<?php
 			global $onetone_animated,$onetone_home_sections;
 

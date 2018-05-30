@@ -9,15 +9,15 @@
  $left_content        = onetone_option( 'section_left_content_'.$i );
  $right_content       = onetone_option( 'section_right_content_'.$i );
 
- if( !isset($section_content) || $section_content=="" ) 
+ if( !isset($section_content) || $section_content=="" )
  	$section_content = onetone_option( 'sction_content_'.$i );
 
 
 		if( $content_model == '0' || $content_model == ''  ):
 		?>
-        
+
          <?php if( $section_title != '' || (function_exists('is_customize_preview') && is_customize_preview()) ):?>
-       <?php  
+       <?php
 		   $section_title_class = '';
 		   if( $section_subtitle == '' && !(function_exists('is_customize_preview') && is_customize_preview()))
 		   $section_title_class = 'no-subtitle';
@@ -30,7 +30,13 @@
          <div class="home-section-content">
          <div class="row">
          <div class="col-md-6 event-social-description"><div class="<?php echo $onetone_animated;?> <?php echo 'section_left_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInLeft" data-imageanimation="no"><?php echo do_shortcode($left_content);?></div></div>
-         <div class="col-md-6 event-social"><div class="<?php echo $onetone_animated;?> <?php echo 'section_right_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no"><?php echo do_shortcode($right_content);?></div></div>
+         <div class="col-md-6 event-social">
+            <div class="<?php echo $onetone_animated;?> <?php echo 'section_right_content_'.$i;?>" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no">
+              <div class="video-event">
+                <?php echo do_shortcode($right_content);?>
+              </div>
+            </div>
+          </div>
          </div>
           </div>
            <?php
@@ -39,9 +45,9 @@
         <?php if( $section_title != '' || (function_exists('is_customize_preview') && is_customize_preview()) ):?>
         <div class="section-title <?php echo 'section_title_'.$i;?>"><?php echo esc_attr($section_title);?></div>
         <?php endif;?>
-       
+
             <div class="home-section-content <?php echo 'section_content_'.$i;?>">
-            <?php 
+            <?php
 			if(function_exists('Form_maker_fornt_end_main'))
              {
                  $section_content = Form_maker_fornt_end_main($section_content);
@@ -49,6 +55,6 @@
 			 echo do_shortcode(wp_kses($section_content, $allowedposttags));
 			?>
             </div>
-              <?php 
+              <?php
 		endif;
 		?>
