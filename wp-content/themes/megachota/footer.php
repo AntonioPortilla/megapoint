@@ -7,7 +7,7 @@
 ?>
 <!--Footer-->
 
-<footer>
+<footer pie>
   <?php if( $display_footer_widgets == '1' ):?>
   <div class="footer-widget-area">
     <div class="container">
