@@ -193,7 +193,7 @@ section .banner-box div.section-subtitle{
 .contact-area {
     margin:0 auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 690px;
     text-align:center;
     overflow:hidden;
 }
@@ -212,14 +212,7 @@ section .banner-box div.section-subtitle{
 	margin-bottom: 12px;
 	text-align: center;
 }
-.enviar {
-	max-width: 105px;
-	background-color: #0071BC !important;
-	color: #fff !important;
-	border: 0 !important;
-	display: block;
-	margin: 0 auto;
-}
+
 .contact-form .send {}
 .contact-form .send span{display: inline-block;position: relative;}
 .contact-form .send span:before {

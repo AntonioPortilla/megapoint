@@ -28,9 +28,9 @@
   </div>
   <?php endif; ?>
   <?php if( $display_copyright_bar == 'yes' ||  $display_copyright_bar == '1' ):?>
-  <div class="footer-info-area" role="contentinfo">
-    <div class="container">
-      <div class="site-info pull-left"> <?php echo do_shortcode($copyright_text); ?> &nbsp;&nbsp; &nbsp;&nbsp;
+  <div class="footer-info-area-mega" role="contentinfo">
+    <div class="container-mega">
+      <div class="site-info social-media"> <?php echo do_shortcode($copyright_text); ?> &nbsp;&nbsp; &nbsp;&nbsp;
 
         <?php
                       /*if( is_home() || is_front_page()){
@@ -40,10 +40,10 @@
 						  }*/
 						  ?>
 </div>
-      <div class="site-social pull-right">
+      <!--<div class="site-social pull-right">
         Diseño y concepto: <a href="http://w-taylor.com/" target="_blank">Agencia w-taylor</a>
-        <?php echo onetone_get_social( 'footer_social_icons', 'top'); ?>
-      </div>
+        <?php //echo onetone_get_social( 'footer_social_icons', 'top'); ?>
+      </div>-->
     </div>
   </div>
   <?php endif; ?>
@@ -52,3 +52,5 @@
 <?php wp_footer();?>
 </body>
 </html>
+
+
