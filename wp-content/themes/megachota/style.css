@@ -3487,4 +3487,7 @@ border:none;
 	margin: 0 5px;
 	text-decoration: none;
 }
+header .top-bar {
+	display: none;
+}
 
