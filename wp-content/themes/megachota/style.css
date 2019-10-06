@@ -3490,4 +3490,14 @@ border:none;
 header .top-bar {
 	display: none !important;
 }
-
+.separator {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+.page-interna {
+	margin-bottom: 20px;
+}
+.page-interna h2 {
+	text-align: center;
+}
