@@ -3508,7 +3508,9 @@ header .top-bar {
 	font-size: 28px;
 	margin-top: 50px;
 }
-
+.conctact-mega {
+	margin-top: 35px;
+}
 .conctact-mega .text-right {
 	text-align: right;
 	padding-right: 40px;
