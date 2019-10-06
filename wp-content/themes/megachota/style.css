@@ -724,7 +724,10 @@ ul.top-bar-sns {
 
 img.site-logo {
 	float: left;
-	max-height: 150px;
+	max-height: 85px;
+}
+header.fixed-header img.site-logo {
+	max-height: 150px !important;
 }
 
 .name-box {
