@@ -1,0 +1,46 @@
+footer {
+    .content-footer {
+        background-color: $color_gray;
+        color: $color_black;
+        padding: 38px 0 30px 0;
+        .social-icons {
+            margin-bottom: 15px;
+            a {
+                width: 40px;
+                height: 40px;
+                border: 1px solid $color_black;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    max-width: 22px;
+                    max-height: 22px;
+                    width: 100%;
+                }
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+                &:hover {
+                    background-color: $color_white;
+                    border-color: $color_blue;
+                    svg {
+                        fill: $color_blue
+                    }
+                }
+            }
+        }
+        .design-by {
+            color: #9BA0A5;
+            padding: 4px 10px;
+            font-size: 15px;
+            a {
+                color: #9BA0A5;
+                &:hover {
+                    color: $color_blue;
+                }
+            }
+        }
+    }
+    	
+}

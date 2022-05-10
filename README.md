@@ -1,2 +1,0 @@
-# megapoint
-eventos pra bodas

@@ -1,0 +1,11 @@
+form {
+    input.form-control, select.form-control {
+        border: 1px solid $color_black;
+    }
+    button {
+        width: 200px;
+    }
+}
+.container-form {
+    max-width: 700px;
+}

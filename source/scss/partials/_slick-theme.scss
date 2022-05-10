@@ -1,0 +1,257 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    //background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+/* Arrows */
+.slick-arrow {
+    font-family: "Font Awesome 5 Brands";
+}
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+
+    //width: 50px;
+    //height: 50px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    //background: transparent;
+    z-index: 1;
+
+    background: hsla(0,0%,100%,.9);
+    width: 40px;
+    height: 71px;
+    padding-top: 12px;
+
+
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: #fff;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+
+    font-size: 45px;
+    line-height: 1;
+
+    //opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ed0a01;
+}
+
+.slick-prev
+{
+    left: 0;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -8px;
+    left: auto;
+}
+
+[dir='rtl'] .slick-prev:before
+{
+    content: '\f054';
+}
+
+.slick-next
+{
+    right: 0;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -8px;
+}
+.slick-prev:before
+{
+    content: '';
+    //background-image: url(../images/left.png);
+    //background-repeat: no-repeat;
+    background-color: #adadad;
+    //width: 50px;
+    //height: 50px;
+    //position: absolute;
+    //top: 0;
+    //right: 0;
+
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    height: 30px;
+    width: 1px;
+    margin-left: 20px;
+    margin-top: -9px;
+}
+.slick-prev:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.slick-next:before
+{
+	content: "";
+	//background-image: url(../images/right.png);
+	//background-repeat: no-repeat;
+    background-color: #adadad;
+	//width: 50px;
+	//height: 50px;
+	//position: absolute;
+	//top: 0;
+	//right: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: block;
+    height: 30px;
+    width: 1px;
+    margin-left: 20px;
+    margin-top: -9px;
+}
+.slick-next:after{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.slick-prev:after,
+.slick-next:after{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: #adadad;
+    margin-left: 20px;
+    margin-top: -9px;
+}
+[dir='rtl'] .slick-next:before
+{
+	content: '';
+	background-image: url(../images/left.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    //bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    //background: transparent;
+    background: #ccc;
+    border-radius: 50%;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: transparent;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: transparent;
+}

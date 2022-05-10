@@ -1,0 +1,81 @@
+
+body {
+	&.home {
+		section {
+            position: relative;
+            &.section {
+                &-banner {
+                    width: 100%;
+                    position: relative; 
+                    .content-banner {
+                        width: 100%;
+                        position: relative;   
+                        h1 {
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                            text-transform: uppercase;
+                        } 
+                    }
+                    article {
+                        width: 100%;
+                        height: 440px;
+                        position: relative;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        &:after {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba($color_black, .4);
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        font-weight: 300;
+                    }             
+                    .container {
+                        height: 100%;
+                        .row {
+                            height: 100%;
+                            z-index: 1;
+                            position: relative;
+                            color: $color_white;
+                        }
+                    }
+                    .slick-dots {
+                        bottom: 10px;
+                    }
+                }
+                &-services {
+                    margin-top: 100px;
+                    .paralax {
+                        height: 300px;
+                        background-position: center center;
+                        background-attachment: fixed;
+                    }
+                }
+                &-contact {
+                    padding: 50px 0;
+                }
+            }
+        }
+        .container-line {
+            text-align: center;
+        }
+    }
+    .da-animate {
+        animation-name: blinking;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: blinking;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        transition: background-color .3s;
+    }
+}
