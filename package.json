@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "3.4.1",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
